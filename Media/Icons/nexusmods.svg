@@ -1,0 +1,50 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Art Deco Nexus Mods Icon -->
+  
+  <!-- Main background circle -->
+  <circle cx="60" cy="60" r="58" fill="#14213d" stroke="#d4af37" stroke-width="2"/>
+  
+  <!-- Radiating lines pattern -->
+  <g stroke="#d4af37" stroke-width="0.5" opacity="0.7">
+    <line x1="60" y1="60" x2="60" y2="2" />
+    <line x1="60" y1="60" x2="105" y2="15" />
+    <line x1="60" y1="60" x2="118" y2="60" />
+    <line x1="60" y1="60" x2="105" y2="105" />
+    <line x1="60" y1="60" x2="60" y2="118" />
+    <line x1="60" y1="60" x2="15" y2="105" />
+    <line x1="60" y1="60" x2="2" y2="60" />
+    <line x1="60" y1="60" x2="15" y2="15" />
+  </g>
+  
+  <!-- Decorative inner circle -->
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Stylized Nexus Mods emblem -->
+  <g transform="translate(60, 60) scale(0.65)">
+    <!-- Outer shape -->
+    <path d="M-40,-40 C-30,-50 30,-50 40,-40 C50,-30 50,30 40,40 C30,50 -30,50 -40,40 C-50,30 -50,-30 -40,-40 Z" 
+          fill="none" stroke="#d4af37" stroke-width="4"/>
+    
+    <!-- X cross mark in gold -->
+    <path d="M-25,-25 L25,25 M-25,25 L25,-25" 
+          stroke="#d4af37" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Inner details -->
+    <path d="M0,-30 L-10,-10 L-30,0 L-10,10 L0,30 L10,10 L30,0 L10,-10 Z" 
+          fill="#d4af37" stroke="none"/>
+  </g>
+  
+  <!-- Art Deco decorative corner elements -->
+  <g fill="#d4af37">
+    <rect x="10" y="10" width="8" height="8" />
+    <rect x="102" y="10" width="8" height="8" />
+    <rect x="10" y="102" width="8" height="8" />
+    <rect x="102" y="102" width="8" height="8" />
+  </g>
+  
+  <!-- Small decorative circles -->
+  <circle cx="30" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="30" cy="90" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="90" r="3" fill="#d4af37"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Art Deco Javascript Icon -->
+  <circle cx="60" cy="60" r="58" fill="#14213d" stroke="#d4af37" stroke-width="2"/>
+  <g stroke="#d4af37" stroke-width="0.5" opacity="0.7">
+    <line x1="60" y1="60" x2="60" y2="2" />
+    <line x1="60" y1="60" x2="105" y2="15" />
+    <line x1="60" y1="60" x2="118" y2="60" />
+    <line x1="60" y1="60" x2="105" y2="105" />
+    <line x1="60" y1="60" x2="60" y2="118" />
+    <line x1="60" y1="60" x2="15" y2="105" />
+    <line x1="60" y1="60" x2="2" y2="60" />
+    <line x1="60" y1="60" x2="15" y2="15" />
+  </g>
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Stylized JS Symbol -->
+  <g fill="#d4af37">
+    <!-- JS Square -->
+    <rect x="35" y="35" width="50" height="50" fill="none" stroke="#d4af37" stroke-width="2"/>
+    
+    <!-- J -->
+    <path d="M50 45 L55 45 L55 65 C55 70, 50 70, 45 70 L45 65 L50 65 C52 65, 50 65, 50 63 Z" fill="#d4af37"/>
+    
+    <!-- S -->
+    <path d="M65 45 L75 45 L75 50 L70 50 L70 55 L75 55 L75 70 L65 70 L65 65 L70 65 L70 60 L65 60 Z" fill="#d4af37"/>
+    
+    <!-- Decorative elements -->
+    <circle cx="60" cy="80" r="2" fill="#d4af37"/>
+    <rect x="45" y="75" width="30" height="1" fill="#d4af37"/>
+  </g>
+  
+  <g fill="#d4af37">
+    <rect x="10" y="10" width="8" height="8" />
+    <rect x="102" y="10" width="8" height="8" />
+    <rect x="10" y="102" width="8" height="8" />
+    <rect x="102" y="102" width="8" height="8" />
+  </g>
+  <circle cx="30" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="30" cy="90" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="90" r="3" fill="#d4af37"/>
+</svg>

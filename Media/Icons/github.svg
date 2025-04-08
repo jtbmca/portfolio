@@ -1,0 +1,64 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Art Deco GitHub Icon -->
+  
+  <!-- Background circle with geometric pattern -->
+  <circle cx="60" cy="60" r="58" fill="#14213d" stroke="#d4af37" stroke-width="2"/>
+  
+  <!-- Radiating lines in background -->
+  <g stroke="#d4af37" stroke-width="0.5" opacity="0.7">
+    <line x1="60" y1="60" x2="60" y2="2" />
+    <line x1="60" y1="60" x2="105" y2="15" />
+    <line x1="60" y1="60" x2="118" y2="60" />
+    <line x1="60" y1="60" x2="105" y2="105" />
+    <line x1="60" y1="60" x2="60" y2="118" />
+    <line x1="60" y1="60" x2="15" y2="105" />
+    <line x1="60" y1="60" x2="2" y2="60" />
+    <line x1="60" y1="60" x2="15" y2="15" />
+  </g>
+  
+  <!-- Decorative inner circle -->
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Stylized octopus body (GitHub mascot) -->
+  <path d="M60 28
+           C42 28 28 42 28 60
+           C28 74 37 86 50 90
+           C52 90.5 53 89 53 88
+           L53 80
+           C43 82 41 74 41 74
+           C39 70 37 68 37 68
+           C34 66 37 66 37 66
+           C40 66 42 70 42 70
+           C45 76 50 74 53 73
+           C53.5 70 55 68 56 67
+           C48 66 40 62 40 50
+           C40 46 42 42 45 39
+           C44 38 42 34 45 30
+           C45 30 48 29 53 33
+           C55 32 58 32 60 32
+           C62 32 65 32 67 33
+           C72 29 75 30 75 30
+           C78 34 76 38 75 39
+           C78 42 80 46 80 50
+           C80 62 72 66 64 67
+           C65 68 66 70 66 73
+           L66 88
+           C66 89 67 90.5 69 90
+           C82 86 91 74 91 60
+           C91 42 77 28 60 28Z"
+           fill="#d4af37"/>
+           
+  <!-- Art Deco decorative corner elements -->
+  <g fill="#d4af37">
+    <rect x="10" y="10" width="8" height="8" />
+    <rect x="102" y="10" width="8" height="8" />
+    <rect x="10" y="102" width="8" height="8" />
+    <rect x="102" y="102" width="8" height="8" />
+  </g>
+  
+  <!-- Small decorative circles -->
+  <circle cx="30" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="30" cy="90" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="90" r="3" fill="#d4af37"/>
+</svg>

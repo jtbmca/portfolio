@@ -1,0 +1,39 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Art Deco Location Icon -->
+  
+  <!-- Main background circle -->
+  <circle cx="60" cy="60" r="58" fill="#14213d" stroke="#d4af37" stroke-width="2"/>
+  
+  <!-- Radiating lines pattern -->
+  <g stroke="#d4af37" stroke-width="0.5" opacity="0.7">
+    <line x1="60" y1="60" x2="60" y2="2" />
+    <line x1="60" y1="60" x2="105" y2="15" />
+    <line x1="60" y1="60" x2="118" y2="60" />
+    <line x1="60" y1="60" x2="105" y2="105" />
+    <line x1="60" y1="60" x2="60" y2="118" />
+    <line x1="60" y1="60" x2="15" y2="105" />
+    <line x1="60" y1="60" x2="2" y2="60" />
+    <line x1="60" y1="60" x2="15" y2="15" />
+  </g>
+  
+  <!-- Decorative inner circle -->
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Location pin -->
+  <path d="M60 35c-8.284 0-15 6.716-15 15 0 8.284 15 35 15 35s15-26.716 15-35c0-8.284-6.716-15-15-15z" fill="#d4af37"/>
+  <circle cx="60" cy="50" r="7" fill="#14213d"/>
+  
+  <!-- Art Deco decorative corner elements -->
+  <g fill="#d4af37">
+    <rect x="10" y="10" width="8" height="8" />
+    <rect x="102" y="10" width="8" height="8" />
+    <rect x="10" y="102" width="8" height="8" />
+    <rect x="102" y="102" width="8" height="8" />
+  </g>
+  
+  <!-- Small decorative circles -->
+  <circle cx="30" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="30" cy="90" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="90" r="3" fill="#d4af37"/>
+</svg>

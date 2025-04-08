@@ -1,0 +1,38 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Art Deco HTML Icon -->
+  <circle cx="60" cy="60" r="58" fill="#14213d" stroke="#d4af37" stroke-width="2"/>
+  <g stroke="#d4af37" stroke-width="0.5" opacity="0.7">
+    <line x1="60" y1="60" x2="60" y2="2" />
+    <line x1="60" y1="60" x2="105" y2="15" />
+    <line x1="60" y1="60" x2="118" y2="60" />
+    <line x1="60" y1="60" x2="105" y2="105" />
+    <line x1="60" y1="60" x2="60" y2="118" />
+    <line x1="60" y1="60" x2="15" y2="105" />
+    <line x1="60" y1="60" x2="2" y2="60" />
+    <line x1="60" y1="60" x2="15" y2="15" />
+  </g>
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Stylized HTML Tag -->
+  <g fill="#d4af37">
+    <!-- HTML Shield -->
+    <path d="M40 35 L35 85 L60 90 L85 85 L80 35 Z" fill="none" stroke="#d4af37" stroke-width="2"/>
+    
+    <!-- HTML Text -->
+    <path d="M48 45 L48 50 L53 50 L53 75 L58 75 L58 50 L63 50 L63 45 Z" fill="#d4af37"/> <!-- H -->
+    <path d="M65 45 L65 75 L75 75 L75 70 L70 70 L70 62 L75 62 L75 57 L70 57 L70 50 L75 50 L75 45 Z" fill="#d4af37"/> <!-- T -->
+    <path d="M77 45 L77 75 L82 75 L82 65 L87 65 L87 75 L92 75 L92 45 L87 45 L87 55 L82 55 L82 45 Z" fill="#d4af37"/> <!-- M -->
+    <path d="M50 60 L60 65 L70 60" stroke="#d4af37" stroke-width="2" fill="none"/> <!-- Decorative line -->
+  </g>
+  
+  <g fill="#d4af37">
+    <rect x="10" y="10" width="8" height="8" />
+    <rect x="102" y="10" width="8" height="8" />
+    <rect x="10" y="102" width="8" height="8" />
+    <rect x="102" y="102" width="8" height="8" />
+  </g>
+  <circle cx="30" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="30" cy="90" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="90" r="3" fill="#d4af37"/>
+</svg>

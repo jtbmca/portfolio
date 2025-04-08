@@ -1,0 +1,43 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Art Deco Scratch Icon -->
+  <circle cx="60" cy="60" r="58" fill="#14213d" stroke="#d4af37" stroke-width="2"/>
+  <g stroke="#d4af37" stroke-width="0.5" opacity="0.7">
+    <line x1="60" y1="60" x2="60" y2="2" />
+    <line x1="60" y1="60" x2="105" y2="15" />
+    <line x1="60" y1="60" x2="118" y2="60" />
+    <line x1="60" y1="60" x2="105" y2="105" />
+    <line x1="60" y1="60" x2="60" y2="118" />
+    <line x1="60" y1="60" x2="15" y2="105" />
+    <line x1="60" y1="60" x2="2" y2="60" />
+    <line x1="60" y1="60" x2="15" y2="15" />
+  </g>
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Stylized Scratch Elements -->
+  <g fill="#d4af37">
+    <!-- Cat silhouette - Scratch mascot -->
+    <path d="M60 40 C65 35, 75 38, 75 45 C80 43, 85 47, 80 52 C85 55, 85 65, 80 68 C82 73, 80 80, 75 80 C73 83, 67 83, 65 80 C63 83, 57 83, 55 80 C50 80, 48 73, 50 68 C45 65, 45 55, 50 52 C45 47, 50 43, 55 45 C55 38, 65 35, 60 40" fill="none" stroke="#d4af37" stroke-width="2"/>
+    
+    <!-- Scratch blocks -->
+    <rect x="35" y="60" width="20" height="8" rx="2" ry="2" fill="#d4af37"/>
+    <rect x="37" y="70" width="20" height="8" rx="2" ry="2" fill="#d4af37"/>
+    <rect x="65" y="60" width="20" height="8" rx="2" ry="2" fill="#d4af37"/>
+    <rect x="63" y="70" width="20" height="8" rx="2" ry="2" fill="#d4af37"/>
+    
+    <!-- Cat features -->
+    <circle cx="55" cy="47" r="2" fill="#d4af37"/>
+    <circle cx="65" cy="47" r="2" fill="#d4af37"/>
+    <path d="M58 52 L62 52 L60 55 Z" fill="#d4af37"/>
+  </g>
+  
+  <g fill="#d4af37">
+    <rect x="10" y="10" width="8" height="8" />
+    <rect x="102" y="10" width="8" height="8" />
+    <rect x="10" y="102" width="8" height="8" />
+    <rect x="102" y="102" width="8" height="8" />
+  </g>
+  <circle cx="30" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="30" r="3" fill="#d4af37"/>
+  <circle cx="30" cy="90" r="3" fill="#d4af37"/>
+  <circle cx="90" cy="90" r="3" fill="#d4af37"/>
+</svg>

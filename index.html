@@ -1,0 +1,498 @@
+<!-- Personal Portfolio
+We are going to create a personal portfolio website. The purpose of this portfolio is to share 
+your developer projects and let others know a little about you! Essentially, it's a fancy 
+resume. In this project, you will utilize HTML, CSS, and Bootstrap 5 to design the website. 
+Below is a minimum list of what is needed for this portfolio:
+Requirements:
+1. Navigation
+a. A way to navigate to specific sections of the website (e.g., "About Me," 
+"Projects," "Contact").
+2. Buttons to Social Media Links
+a. Buttons linking to your social media profiles, such as:
+i. LinkedIn
+ii. GitHub
+3. About You Section
+a. Name: Your full name.
+b. Information about who you are: A brief description of yourself, your 
+background, or your professional journey.
+c. Skills: A list or description of the skills you have acquired (e.g., web 
+development, design, problem-solving).
+d. Frameworks: A list of the frameworks or libraries you are familiar with (e.g., 
+React, Angular, Vue).
+e. Coding Languages: A list of programming languages you know (e.g., 
+JavaScript, Python, HTML/CSS).
+4. Coding Projects Display
+a. Showcase your previous or current coding projects, including:
+i. A brief description of each project
+ii. Technologies used
+iii. Links to the live project or GitHub repository -->
+
+
+<!-- My intention here to complete the above assignment as well as as to use this site as my actual portfolio for the time being even though I'm not 100% sure that it will be professional enough
+I am going to style this in art deco because it is close to my heart and because my original idea was too tied into my life as a gardener.  
+My intention is to keep the technical side of this to a minimum so that I can focus on the styling and finishing projects for the content.
+In my vision, there is a single fixed responsive footer that will be at the bottom of the page and will contain all of the navigation.
+above that will be a content window where the link content will be displyed.
+I am going to use a single page for the entire site and use JavaScript to load the content into the content window.
+On wider screens, there will also be a ciruclar content window above the main one for supplemental information. The footer will be split into three sections. The left and right sections will contain the navigation buttons, while the center section will contain a decorative element. On smaller screens, the left and right sections will stack vertically, and the center section will be hidden.
+The left and right sections will contain the navigation buttons, while the center section will contain a decorative element. On smaller screens, the left and right sections will stack vertically, and the center section will be hidden.
+I am going to use Bootstrap 5 for the positioning and responsiveness of the page, as well as the icons needed for social media. I will also use some custom CSS to achieve the desired look and feel. 
+I am initially going to build the site with SVG for the decorative elements, but I may switch to PNG or JPG images later. -->
+
+<!-- Update to intentions:I am no longer using bootstrap icons, rather I have created my own in svg for a more cohesive design language -->
+<!-- Update to intentions:The circular content window above the content window is only being used for tablet view in this version -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links for styling: bootstrap framework, custom styles sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Links for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <title>Joshua Tyler Burke - Developer</title>
+</head>
+<body>
+<!--  Fixed Navigation Footer -->
+<footer class="footer fixed-bottom py-3">
+  <div class="container">
+    <div class="row align-items-stretch h-100">
+      <!-- Left card - hidden on xs screens -->
+      <div class="col-sm-5 d-none d-sm-block">
+        <div class="nav-card">
+          <div class="card-body d-flex flex-column justify-content-between p-2">
+            <button class="btn btn-outline-light">INTRODUCTION</button>
+            <button class="btn btn-outline-light">CONTACT</button>
+          </div>
+        </div>
+        <div class="d-none"> <!-- Hidden element on purpose -->
+          ©️2025 Joshua Tyler Burke. All rights reserved.©️
+        </div>
+      </div>
+      
+
+      <!-- Center decorative element - hidden on xs screens -->
+      <div class="col-sm-2 d-none d-sm-block text-center p-0">
+        <div class="footer-decoration">
+          <!-- SVG element for the decorative center -->
+          <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background base -->
+            <rect x="0" y="0" width="120" height="80" fill="var(--color-navy)"/>
+            
+            <!-- Art Deco radiating pattern -->
+            <g transform="translate(60, 60)">
+              <!-- Outer circle -->
+              <circle cx="0" cy="0" r="40" fill="none" stroke="var(--color-gold)" stroke-width="1.5"/>
+              
+              <!-- Radiating lines -->
+              <g stroke="var(--color-gold)" stroke-width="1">
+                <line x1="0" y1="0" x2="0" y2="-40" />
+                <line x1="0" y1="0" x2="10" y2="-38.8" />
+                <line x1="0" y1="0" x2="19.6" y2="-34.8" />
+                <line x1="0" y1="0" x2="28.3" y2="-28.3" />
+                <line x1="0" y1="0" x2="34.8" y2="-19.6" />
+                <line x1="0" y1="0" x2="38.8" y2="-10" />
+                <line x1="0" y1="0" x2="40" y2="0" />
+                <line x1="0" y1="0" x2="38.8" y2="10" />
+                <line x1="0" y1="0" x2="34.8" y2="19.6" />
+                <line x1="0" y1="0" x2="28.3" y2="28.3" />
+                <line x1="0" y1="0" x2="19.6" y2="34.8" />
+                <line x1="0" y1="0" x2="10" y2="38.8" />
+                <line x1="0" y1="0" x2="0" y2="40" />
+                <line x1="0" y1="0" x2="-10" y2="38.8" />
+                <line x1="0" y1="0" x2="-19.6" y2="34.8" />
+                <line x1="0" y1="0" x2="-28.3" y2="28.3" />
+                <line x1="0" y1="0" x2="-34.8" y2="19.6" />
+                <line x1="0" y1="0" x2="-38.8" y2="10" />
+                <line x1="0" y1="0" x2="-40" y2="0" />
+                <line x1="0" y1="0" x2="-38.8" y2="-10" />
+                <line x1="0" y1="0" x2="-34.8" y2="-19.6" />
+                <line x1="0" y1="0" x2="-28.3" y2="-28.3" />
+                <line x1="0" y1="0" x2="-19.6" y2="-34.8" />
+                <line x1="0" y1="0" x2="-10" y2="-38.8" />
+              </g>
+              
+              <!-- Mid-circle decorative element -->
+              <circle cx="0" cy="0" r="25" fill="none" stroke="var(--color-gold)" stroke-width="1"/>
+              <circle cx="0" cy="0" r="20" fill="var(--color-navy-light)" stroke="var(--color-gold)" stroke-width="0.5"/>
+              
+              <!-- Inner circle -->
+              <circle cx="0" cy="0" r="10" fill="var(--color-gold)" stroke="#ffffff" stroke-width="0.5"/>
+              <circle cx="0" cy="0" r="5" fill="var(--color-navy)" stroke="var(--color-gold)" stroke-width="0.5"/>
+            </g>
+            
+            <!-- Side decorative elements -->
+            <g transform="translate(20, 40)">
+              <circle cx="0" cy="0" r="8" fill="none" stroke="var(--color-gold)" stroke-width="1"/>
+              <circle cx="0" cy="0" r="4" fill="var(--color-gold)"/>
+            </g>
+            
+            <g transform="translate(100, 40)">
+              <circle cx="0" cy="0" r="8" fill="none" stroke="var(--color-gold)" stroke-width="1"/>
+              <circle cx="0" cy="0" r="4" fill="var(--color-gold)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Right card -->
+      <div class="col-12 col-sm-5">
+        <div class="nav-card">
+          <div class="card-body p-2">
+            <!-- Desktop layout -->
+            <div class="d-none d-sm-flex flex-column justify-content-between h-100">
+              <button class="btn btn-outline-light">PROJECTS</button>
+              <button class="btn btn-outline-light">CREDENTIALS</button>
+            </div>
+            
+            <!-- Navigation for xs screens only - 2×2 grid layout -->
+            <div class="d-sm-none">
+              <div class="row g-2">
+                <div class="col-6">
+                  <button class="btn btn-outline-light w-100">INTRODUCTION</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-outline-light w-100">CONTACT</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-outline-light w-100">PROJECTS</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-outline-light w-100">CREDENTIALS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Main content container -->
+<main class="content-container">
+  <!-- Circular feature container (visible on larger screens) -->
+  <div class="circular-feature-container d-none d-md-block d-xl-none">
+    <div class="circular-feature">
+      <div class="circle-outer">
+        <div class="circle-inner">
+          <!-- content inside the circle -->
+          <div class="feature-content"><img src="./Media/[002430].jpg" alt="JTB"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content sections -->
+  <div class="content-window">
+    <!-- Introduction section (shown by default) -->
+    <section id="introduction-content" class="content-section active">
+      <div class="content-card">
+        <div class="content-header">
+          <h1 class="limelight">Introducing</h1>
+        </div>
+        <div class="content-body">
+          <!-- Introduction content here -->
+          <div class="row">
+            <div class="col-md-8">
+              <h2 class="courier">Joshua Tyler Burke</h2>
+              <h3 class="courier">Developer of</h3>
+              <div class="icon-grid categories-grid">
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/web.svg" alt="Websites" class="custom-icon">
+                  </div>
+                  <span>Websites</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/amusements.svg" alt="Amusements" class="custom-icon">
+                  </div>
+                  <span>Amusements</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/vidja.svg" alt="Videos" class="custom-icon">
+                  </div>
+                  <span>Videos</span>
+                </div>
+              </div>
+              
+              <h3 class="courier">Utilizing</h3>
+              <div class="icon-grid tech-grid">
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/HTMl.svg" alt="HTML" class="custom-icon">
+                  </div>
+                  <span>HTML</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/css.svg" alt="CSS" class="custom-icon">
+                  </div>
+                  <span>CSS</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/js.svg" alt="Javascript" class="custom-icon">
+                  </div>
+                  <span>Javascript</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/phaser.svg" alt="Phaser" class="custom-icon">
+                  </div>
+                  <span>Phaser</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/scratch.svg" alt="Scratch" class="custom-icon">
+                  </div>
+                  <span>Scratch</span>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-container">
+                    <img src="./media/icons/creation.svg" alt="Creation Engine" class="custom-icon">
+                  </div>
+                  <span>Creation</span>
+                </div>
+              </div>
+
+              <p class="lead">I am a retired florist and gardener with a lifelong passion for technology. Currently, I am focusing on beginning my second career in software development. In the past, I have completed projects in video production and game modification.</p>
+            </div>
+            <div class="col-md-4 d-md-none d-xl-block">
+              <!-- Profile image with Art Deco frame -->
+              <div class="circular-feature-container">
+                <div class="circular-feature">
+                  <div class="circle-outer">
+                    <div class="circle-inner">
+                      <!-- content inside the circle -->
+                      <div class="feature-content">
+                        <img src="./Media/[002430].jpg" alt="JTB">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section (hidden by default) -->
+    <section id="projects-content" class="content-section">
+      <div class="content-card">
+        <div class="content-header">
+          <h1 class="limelight">Projects</h1>
+        </div>
+        <div class="content-body">
+          <!-- Projects grid -->
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Project card template -->
+            <div class="col">
+              <div class="project-card">
+                <!-- Project content -->
+              </div>
+            </div>
+            <!-- More project cards -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other content sections (hidden by default) -->
+    <section id="credentials-content" class="content-section">
+      <div class="content-card">
+        <div class="content-header">
+          <h1 class="limelight">Credentials</h1>
+        </div>
+        <div class="content-body">
+          <!-- Credentials content -->
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Credential card template -->
+            <div class="col">
+              <div class="project-card">
+                <!-- Credential content -->
+              </div>
+            </div>
+            <!-- More credential cards -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-content" class="content-section">
+      <div class="content-card">
+        <div class="content-header">
+          <h1 class="limelight">Contact</h1>
+        </div>
+        <div class="content-body">
+          <!-- Status banner replacing h1 and h2 -->
+          <div class="status-banner">
+            <div class="status-icon">
+              <div class="status-indicator available"></div>
+            </div>
+            <div class="status-text">
+              <span class="limelight">Currently Available</span>
+              <span class="courier">for new projects and collaborations</span>
+            </div>
+            <div class="location-info">
+              <img src="./media/icons/location.svg" alt="Location" class="location-icon">
+              <span class="courier">Jackson, Mississippi</span>
+            </div>
+            <div class="response-info">
+              <img src="./media/icons/clock.svg" alt="Response Time" class="response-icon">
+              <span class="courier">Typical response time: <span class="response-highlight">24-48 hours</span></span>
+            </div>
+          </div>
+          
+          <p class="lead">I welcome opportunities to collaborate on innovative projects. Feel free to reach out through any of the channels below.</p>
+          
+          <div class="row contact-layout">
+            <!-- Left column - Contact options -->
+            <div class="col-md-6">
+              <!-- Contact options with Art Deco icons - Mobile optimized -->
+              <div class="contact-grid">
+                <!-- Email option -->
+                <a href="mailto:joshua.burke@mscoding.org" class="contact-item-link" aria-label="Send email to Joshua Burke">
+                  <div class="contact-item">
+                    <div class="icon-container">
+                      <img src="./media/icons/email.svg" alt="" class="custom-icon" aria-hidden="true">
+                    </div>
+                    <div class="contact-details">
+                      <span class="contact-label limelight">Email</span>
+                      <span class="contact-text courier">joshua.burke@mscoding.org</span>
+                    </div>
+                  </div>
+                </a>
+                
+                <!-- GitHub option -->
+                <a href="https://github.com/jtbmca" target="_blank" rel="noopener noreferrer" class="contact-item-link" aria-label="Visit Joshua Burke's GitHub profile">
+                  <div class="contact-item">
+                    <div class="icon-container">
+                      <img src="./media/icons/github.svg" alt="" class="custom-icon" aria-hidden="true">
+                    </div>
+                    <div class="contact-details">
+                      <span class="contact-label limelight">GitHub</span>
+                      <span class="contact-text courier">github.com/jtbmca</span>
+                    </div>
+                  </div>
+                </a>
+                
+                <!-- LinkedIn option -->
+                <a href="https://linkedin.com/in/joshua-b-772977353/" target="_blank" rel="noopener noreferrer" class="contact-item-link" aria-label="Connect with Joshua Burke on LinkedIn">
+                  <div class="contact-item">
+                    <div class="icon-container">
+                      <img src="./media/icons/linkedin.svg" alt="" class="custom-icon" aria-hidden="true">
+                    </div>
+                    <div class="contact-details">
+                      <span class="contact-label limelight">LinkedIn</span>
+                      <span class="contact-text courier">linkedin.com/in/joshua-b-772977353/</span>
+                    </div>
+                  </div>
+                </a>
+                
+                <!-- Nexus Mods option -->
+                <a href="https://nexusmods.com/profile/dressedinblack" target="_blank" rel="noopener noreferrer" class="contact-item-link" aria-label="View Joshua Burke's Nexus Mods profile">
+                  <div class="contact-item">
+                    <div class="icon-container">
+                      <img src="./media/icons/nexusmods.svg" alt="" class="custom-icon" aria-hidden="true">
+                    </div>
+                    <div class="contact-details">
+                      <span class="contact-label limelight">Nexus Mods</span>
+                      <span class="contact-text courier">nexusmods.com/profile/dressedinblack</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Resume download button -->
+              <div class="resume-download">
+                <a href="./media/JoshuaBurke_Resume.pdf" download class="download-btn" aria-label="Download Joshua Burke's resume">
+                  <div class="download-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M12 16L7 11H17L12 16Z" fill="currentColor"/>
+                      <path d="M12 2V11M12 16L7 11H17L12 16Z" stroke="currentColor" stroke-width="2"/>
+                      <path d="M2 17V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V17" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <span class="limelight">Download Resume</span>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Right column - Circular feature and contact form -->
+            <div class="col-md-6">
+              <!-- Decorative element for the right side -->
+              <div class="contact-decoration d-none">
+                <div class="circular-feature-container">
+                  <div class="circular-feature">
+                    <div class="circle-outer">
+                      <div class="circle-inner">
+                        <div class="feature-content">
+                          <div class="contact-message limelight">Let's Create Together</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Contact form moved to right side -->
+              <div class="contact-form-container">
+                <h3 class="courier form-heading">Send A Message</h3>
+                
+                <form class="contact-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="name" class="limelight">Name</label>
+                      <input type="text" id="name" name="name" class="form-control" required>
+                      <div class="form-decoration"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="email" class="limelight">Email</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                      <div class="form-decoration"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="subject" class="limelight">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                    <div class="form-decoration"></div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="message" class="limelight">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    <div class="form-decoration"></div>
+                  </div>
+                  
+                  <div class="form-submit">
+                    <button type="submit" class="submit-btn">
+                      <span class="limelight">Send Message</span>
+                      <div class="btn-decoration"></div>
+                    </button>
+                  </div>
+                </form>
+                
+                <div class="form-note courier">
+                  <p>Your information will be used solely to respond to your inquiry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="./js/switcher.js"></script>
+</body>
+</html>
