@@ -58,15 +58,15 @@ I am initially going to build the site with SVG for the decorative elements, but
 </head>
 <body>
 <!--  Fixed Navigation Footer -->
-<footer class="footer fixed-bottom py-3">
+<footer class="footer fixed-bottom py-3" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="row align-items-stretch h-100">
       <!-- Left card - hidden on xs screens -->
       <div class="col-sm-5 d-none d-sm-block">
         <div class="nav-card">
           <div class="card-body d-flex flex-column justify-content-between p-2">
-            <button class="btn btn-outline-light">INTRODUCTION</button>
-            <button class="btn btn-outline-light">CONTACT</button>
+            <button class="btn btn-outline-light" aria-label="Go to introduction section">INTRODUCTION</button>
+            <button class="btn btn-outline-light" aria-label="Go to contact section">CONTACT</button>
           </div>
         </div>
         <div class="d-none"> <!-- Hidden element on purpose -->
@@ -79,7 +79,7 @@ I am initially going to build the site with SVG for the decorative elements, but
       <div class="col-sm-2 d-none d-sm-block text-center p-0">
         <div class="footer-decoration">
           <!-- SVG element for the decorative center -->
-          <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+          <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decorative art deco pattern">
             <!-- Background base -->
             <rect x="0" y="0" width="120" height="80" fill="var(--color-navy)"/>
             
@@ -153,7 +153,7 @@ I am initially going to build the site with SVG for the decorative elements, but
             <div class="d-sm-none">
               <div class="row g-2">
                 <div class="col-6">
-                  <button class="btn btn-outline-light w-100">INTRODUCTION</button>
+                  <button class="btn btn-outline-light w-100 active" aria-current="page">INTRODUCTION</button>
                 </div>
                 <div class="col-6">
                   <button class="btn btn-outline-light w-100">CONTACT</button>
@@ -174,7 +174,7 @@ I am initially going to build the site with SVG for the decorative elements, but
 </footer>
 
 <!-- Main content container -->
-<main class="content-container">
+<main class="content-container" role="main">
   <!-- Circular feature container (visible on larger screens) -->
   <div class="circular-feature-container d-none d-md-block d-xl-none">
     <div class="circular-feature">
@@ -190,7 +190,7 @@ I am initially going to build the site with SVG for the decorative elements, but
   <!-- Content sections -->
   <div class="content-window">
     <!-- Introduction section (shown by default) -->
-    <section id="introduction-content" class="content-section active">
+    <section id="introduction-content" class="content-section active" aria-label="Introduction">
       <div class="content-card">
         <div class="content-header">
           <h1 class="limelight">Introducing</h1>
@@ -285,7 +285,7 @@ I am initially going to build the site with SVG for the decorative elements, but
     </section>
 
     <!-- Projects section (hidden by default) -->
-    <section id="projects-content" class="content-section">
+    <section id="projects-content" class="content-section" aria-label="Projects">
       <div class="content-card">
         <div class="content-header">
           <h1 class="limelight">Projects</h1>
@@ -297,7 +297,7 @@ I am initially going to build the site with SVG for the decorative elements, but
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <!-- Website Project 1 -->
               <div class="col">
-                <div class="project-card">
+                <div class="project-card" aria-label="Project: Detroix Template">
                   <div class="project-header">
                     <div class="circular-project-image">
                       <div class="circle-outer">
@@ -310,7 +310,7 @@ I am initially going to build the site with SVG for the decorative elements, but
                     </div>
                     <h3 class="limelight">Detroix Template</h3>
                   </div>
-                  <div class="project-details">
+                  <div class="project-details" aria-expanded="false">
                     <p class="courier">This template demonstrates basic Bootstrap effieciency.</p>
                     <div class="tech-tags">
                       <span class="tech-tag">HTML</span>
@@ -670,7 +670,7 @@ I am initially going to build the site with SVG for the decorative elements, but
     </section>
 
     <!-- Other content sections (hidden by default) -->
-    <section id="credentials-content" class="content-section">
+    <section id="credentials-content" class="content-section" aria-label="Credentials">
       <div class="content-card">
         <div class="content-header">
           <h1 class="limelight">Credentials</h1>
@@ -782,13 +782,13 @@ I am initially going to build the site with SVG for the decorative elements, but
                 <div class="skills-grid">
                   <div class="skill-item">
                     <div class="skill-name">HTML5</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 95%"></div>
                     </div>
                   </div>
                   <div class="skill-item">
                     <div class="skill-name">CSS3</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 90%"></div>
                     </div>
                   </div>
@@ -800,7 +800,7 @@ I am initially going to build the site with SVG for the decorative elements, but
                   </div> -->
                   <div class="skill-item">
                     <div class="skill-name">Bootstrap</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 80%"></div>
                     </div>
                   </div>
@@ -819,19 +819,19 @@ I am initially going to build the site with SVG for the decorative elements, but
                 <div class="skills-grid">
                   <div class="skill-item">
                     <div class="skill-name">Video Editing</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 80%"></div>
                     </div>
                   </div>
                   <div class="skill-item">
                     <div class="skill-name">Graphic Design</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 70%"></div>
                     </div>
                   </div>
                   <div class="skill-item">
                     <div class="skill-name">Audio Editing</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 65%"></div>
                     </div>
                   </div>
@@ -844,19 +844,19 @@ I am initially going to build the site with SVG for the decorative elements, but
                 <div class="skills-grid">
                   <div class="skill-item">
                     <div class="skill-name">Phaser</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 75%"></div>
                     </div>
                   </div>
                   <div class="skill-item">
                     <div class="skill-name">Scratch</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 90%"></div>
                     </div>
                   </div>
                   <div class="skill-item">
                     <div class="skill-name">Game Modding</div>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                       <div class="skill-level" style="width: 85%"></div>
                     </div>
                   </div>
@@ -881,7 +881,7 @@ I am initially going to build the site with SVG for the decorative elements, but
                   <p class="courier">Moreton's FLowerland </p>
                   <div class="timeline-highlights">
                     <ul>
-                      <li>oversaw logistics and managed up to ten contract drivers</li>
+                      <li>Oversaw logistics and managed up to ten contract drivers</li>
                       <li>Implemented complex digital mapping system</li>
                       <li>⭐⭐⭐⭐⭐ Sales Representative</li>
                     </ul>
@@ -952,14 +952,14 @@ I am initially going to build the site with SVG for the decorative elements, but
       </div>
     </section>
 
-    <section id="contact-content" class="content-section">
+    <section id="contact-content" class="content-section" aria-label="Contact">
       <div class="content-card">
         <div class="content-header">
           <h1 class="limelight">Contact</h1>
         </div>
         <div class="content-body">
           <!-- Status banner replacing h1 and h2 -->
-          <div class="status-banner">
+          <div class="status-banner" role="status">
             <div class="status-icon">
               <div class="status-indicator available"></div>
             </div>
@@ -1077,31 +1077,31 @@ I am initially going to build the site with SVG for the decorative elements, but
                   <div class="form-row">
                     <div class="form-group">
                       <label for="name" class="limelight">Name</label>
-                      <input type="text" id="name" name="name" class="form-control" required>
+                      <input type="text" id="name" name="name" class="form-control" required aria-required="true">
                       <div class="form-decoration"></div>
                     </div>
                     
                     <div class="form-group">
                       <label for="email" class="limelight">Email</label>
-                      <input type="email" id="email" name="email" class="form-control" required>
+                      <input type="email" id="email" name="email" class="form-control" required aria-required="true">
                       <div class="form-decoration"></div>
                     </div>
                   </div>
                   
                   <div class="form-group">
                     <label for="subject" class="limelight">Subject</label>
-                    <input type="text" id="subject" name="subject" class="form-control" required>
+                    <input type="text" id="subject" name="subject" class="form-control" required aria-required="true">
                     <div class="form-decoration"></div>
                   </div>
                   
                   <div class="form-group">
                     <label for="message" class="limelight">Message</label>
-                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    <textarea id="message" name="message" class="form-control" rows="4" required aria-required="true"></textarea>
                     <div class="form-decoration"></div>
                   </div>
                   
                   <div class="form-submit">
-                    <button type="submit" class="submit-btn">
+                    <button type="submit" class="submit-btn" aria-label="Submit contact form">
                       <span class="limelight">Send Message</span>
                       <div class="btn-decoration"></div>
                     </button>
