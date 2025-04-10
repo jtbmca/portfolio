@@ -1091,6 +1091,12 @@ textarea.form-control {
   font-size: 1.3rem;
   margin: 0.5rem 0;
   position: relative;
+  text-shadow: 
+  -1px -1px 0 var(--color-gold),
+  1px -1px 0 var(--color-gold),
+  -1px 1px 0 var(--color-gold),
+  1px 1px 0 var(--color-gold);
+filter: drop-shadow(0 0 1px rgba(212, 175, 55, 0.3));
 }
 
 .certificate-details {
@@ -1105,7 +1111,11 @@ textarea.form-control {
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--color-gold);
+  text-decoration-thickness: 3px;
 }
+
 
 .certificate-meta {
   display: flex;
